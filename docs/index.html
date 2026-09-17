@@ -1,0 +1,168 @@
+<!-- TODO: make this prettier -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat</title>
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div>
+      <label>The algorithm and data were sourced from <a href="https://gitlab.com/godfat/battle-cats-rolls" target="_blank">Battle Cat Rolls</a></label>
+      <br>
+      <label>Many thanks to <a href="https://godfat.org" target="_blank">Godfat</a></label>
+
+      <div>
+        <br>
+        <label>Need <a href="https://bc-seek.godfat.org/seek#looking-for-your-seed-" target="_blank">help</a>?</label>
+      </div>
+    </div>
+
+    <br>
+
+    <div>
+      <div>
+        <label for="status_txt">Status:</label>
+        <label id="status_txt">Awaiting...</label>
+      </div>
+
+      <br>
+
+      <div>
+        <label for="region_sel">Region:</label>
+        <select id="region_sel">
+          <option value="" disabled selected hidden>None</option>
+          <option value="0">BCEN</option>
+          <option value="1">BCTW</option>
+          <option value="2">BCJP</option>
+          <option value="3">BCKR</option>
+        </select>
+      </div>
+      <div>
+        <label for="banner_sel">Banner:</label>
+        <select id="banner_sel">
+          <option value="" disabled selected hidden>None</option>
+          <optgroup id="banner_upcoming" label="Upcoming:"></optgroup>
+          <optgroup id="banner_past" label="Past:"></optgroup>
+        </select>
+      </div>
+
+      <br>
+
+      <div>
+        <div>
+          <label for="kitty_0">1.</label>
+          <select class="kitty_sel" id="kitty_0">
+            <option value="" selected>None</option>
+            <optgroup class="kitty_g" id="kitty_0_rare" label="Rare:"></optgroup>
+            <optgroup class="kitty_g" id="kitty_0_supa" label="Super:"></optgroup>
+            <optgroup class="kitty_g" id="kitty_0_uber" label="Uber:"></optgroup>
+            <optgroup class="kitty_g" id="kitty_0_legend" label="Legend:"></optgroup>
+          </select>
+        </div>
+        <div>
+          <label for="kitty_1">2.</label>
+          <select class="kitty_sel" id="kitty_1">
+            <option value="" selected>None</option>
+            <optgroup class="kitty_g" id="kitty_1_rare" label="Rare:"></optgroup>
+            <optgroup class="kitty_g" id="kitty_1_supa" label="Super:"></optgroup>
+            <optgroup class="kitty_g" id="kitty_1_uber" label="Uber:"></optgroup>
+            <optgroup class="kitty_g" id="kitty_1_legend" label="Legend:"></optgroup>
+          </select>
+        </div>
+        <div>
+          <label for="kitty_2">3.</label>
+          <select class="kitty_sel" id="kitty_2">
+            <option value="" selected>None</option>
+            <optgroup class="kitty_g" id="kitty_2_rare" label="Rare:"></optgroup>
+            <optgroup class="kitty_g" id="kitty_2_supa" label="Super:"></optgroup>
+            <optgroup class="kitty_g" id="kitty_2_uber" label="Uber:"></optgroup>
+            <optgroup class="kitty_g" id="kitty_2_legend" label="Legend:"></optgroup>
+          </select>
+        </div>
+        <div>
+          <label for="kitty_3">4.</label>
+          <select class="kitty_sel" id="kitty_3">
+            <option value="" selected>None</option>
+            <optgroup class="kitty_g" id="kitty_3_rare" label="Rare:"></optgroup>
+            <optgroup class="kitty_g" id="kitty_3_supa" label="Super:"></optgroup>
+            <optgroup class="kitty_g" id="kitty_3_uber" label="Uber:"></optgroup>
+            <optgroup class="kitty_g" id="kitty_3_legend" label="Legend:"></optgroup>
+          </select>
+        </div>
+        <div>
+          <label for="kitty_4">5.</label>
+          <select class="kitty_sel" id="kitty_4">
+            <option value="" selected>None</option>
+            <optgroup class="kitty_g" id="kitty_4_rare" label="Rare:"></optgroup>
+            <optgroup class="kitty_g" id="kitty_4_supa" label="Super:"></optgroup>
+            <optgroup class="kitty_g" id="kitty_4_uber" label="Uber:"></optgroup>
+            <optgroup class="kitty_g" id="kitty_4_legend" label="Legend:"></optgroup>
+          </select>
+        </div>
+        <div>
+          <label for="kitty_5">6.</label>
+          <select class="kitty_sel" id="kitty_5">
+            <option value="" selected>None</option>
+            <optgroup class="kitty_g" id="kitty_5_rare" label="Rare:"></optgroup>
+            <optgroup class="kitty_g" id="kitty_5_supa" label="Super:"></optgroup>
+            <optgroup class="kitty_g" id="kitty_5_uber" label="Uber:"></optgroup>
+            <optgroup class="kitty_g" id="kitty_5_legend" label="Legend:"></optgroup>
+          </select>
+        </div>
+        <div>
+          <label for="kitty_6">7.</label>
+          <select class="kitty_sel" id="kitty_6">
+            <option value="" selected>None</option>
+            <optgroup class="kitty_g" id="kitty_6_rare" label="Rare:"></optgroup>
+            <optgroup class="kitty_g" id="kitty_6_supa" label="Super:"></optgroup>
+            <optgroup class="kitty_g" id="kitty_6_uber" label="Uber:"></optgroup>
+            <optgroup class="kitty_g" id="kitty_6_legend" label="Legend:"></optgroup>
+          </select>
+        </div>
+        <div>
+          <label for="kitty_7">8.</label>
+          <select class="kitty_sel" id="kitty_7">
+            <option value="" selected>None</option>
+            <optgroup class="kitty_g" id="kitty_7_rare" label="Rare:"></optgroup>
+            <optgroup class="kitty_g" id="kitty_7_supa" label="Super:"></optgroup>
+            <optgroup class="kitty_g" id="kitty_7_uber" label="Uber:"></optgroup>
+            <optgroup class="kitty_g" id="kitty_7_legend" label="Legend:"></optgroup>
+          </select>
+        </div>
+        <div>
+          <label for="kitty_8">9.</label>
+          <select class="kitty_sel" id="kitty_8">
+            <option value="" selected>None</option>
+            <optgroup class="kitty_g" id="kitty_8_rare" label="Rare:"></optgroup>
+            <optgroup class="kitty_g" id="kitty_8_supa" label="Super:"></optgroup>
+            <optgroup class="kitty_g" id="kitty_8_uber" label="Uber:"></optgroup>
+            <optgroup class="kitty_g" id="kitty_8_legend" label="Legend:"></optgroup>
+          </select>
+        </div>
+        <div>
+          <label for="kitty_9">10.</label>
+          <select class="kitty_sel" id="kitty_9">
+            <option value="" selected>None</option>
+            <optgroup class="kitty_g" id="kitty_9_rare" label="Rare:"></optgroup>
+            <optgroup class="kitty_g" id="kitty_9_supa" label="Super:"></optgroup>
+            <optgroup class="kitty_g" id="kitty_9_uber" label="Uber:"></optgroup>
+            <optgroup class="kitty_g" id="kitty_9_legend" label="Legend:"></optgroup>
+          </select>
+        </div>
+      </div>
+
+      <br>
+
+      <button id="seek">Seek</button>
+
+      <div>
+        <br>
+        <label id="res"></label>
+      </div>
+    </div>
+  </body>
+</html>
+
