@@ -116,7 +116,8 @@ function main()
     region_sel.disabled = true;
     status_txt.textContent = "Fetching data...";
 
-    try {
+    try
+    {
       banners = await get_banners(parseInt(ev.target.value));
 
       /** @type {HTMLOptionElement[]} */
@@ -125,7 +126,8 @@ function main()
       /** @type {HTMLOptionElement} */
       let past_opts = [];
 
-      for (const [idx, val] of Object.entries(banners)) {
+      for (const [idx, val] of Object.entries(banners))
+      {
         if (Number(idx) > UPCOMING_BANNER_AMOUNT)
         {
           upcoming_opts.push(new Option(val.name, idx));
@@ -142,7 +144,8 @@ function main()
 
       status_txt.textContent = "Awaiting...";
     }
-    catch (err) {
+    catch (err)
+    {
       status_txt.textContent = `Failed to load banners: ${err}`;
     }
     finally
