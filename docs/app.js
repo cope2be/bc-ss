@@ -49,7 +49,7 @@ function fetch_banners(region)
       reject(err);
     }, { once: true });
 
-    banner_fetcher.postMessage(region)
+    banner_fetcher.postMessage(region);
   });
 }
 
