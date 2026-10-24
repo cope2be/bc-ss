@@ -175,8 +175,8 @@ function main()
     /** @type {HTMLOptionElement[]} */
     let legend_opts = [];
 
-    // in the seeker, rare is 0, and so on
-    // but in the data, rare is 2 and so on
+    // in the algorithm, the rarities are 0..=3 (rare to legend, omitting normal and special)
+    // but the data didn't omit normal and special, so its rarities are 0..=5 (normal to legend)
     for (const val of pools.rare.values()) { rare_opts.push(new Option(`${val.name} (${val.idx})`, `${val.idx}_0`)) }
     for (const val of pools.supa.values()) { supa_opts.push(new Option(`${val.name} (${val.idx})`, `${val.idx}_1`)) }
     for (const val of pools.uber.values()) { uber_opts.push(new Option(`${val.name} (${val.idx})`, `${val.idx}_2`)) }
