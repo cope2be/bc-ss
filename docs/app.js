@@ -123,7 +123,7 @@ function main()
       /** @type {HTMLOptionElement[]} */
       let upcoming_opts = [];
 
-      /** @type {HTMLOptionElement} */
+      /** @type {HTMLOptionElement[]} */
       let past_opts = [];
 
       for (const [idx, val] of Object.entries(banners))
@@ -221,7 +221,9 @@ function main()
     if (!curr_banner) { return }
 
     seek_btn.disabled = true;
-    status_txt.textContent = "Seeking seed..."
+    status_txt.textContent = "Seeking seed...";
+
+    res_label.replaceChildren();
 
     const pools = curr_banner.pools;
 
@@ -286,8 +288,8 @@ function main()
     const begin_str = String(data.begin);
     const end_str = String(data.end);
 
-    res_label.insertAdjacentHTML("beforeend", `Your starting seed is: <a href="https://bc.godfat.org/?seed=${begin_str}" target="_blank">${begin_str}<a><br>`);
-    res_label.insertAdjacentHTML("beforeend", `After rolling the cats you entered, your last seed is: <a href="https://bc.godfat.org/?seed=${end_str}" target="_blank">${end_str}<a><br>`);
+    res_label.insertAdjacentHTML("beforeend", `Your starting seed is: <a href="https://bc.godfat.org/?seed=${begin_str}" target="_blank">${begin_str}</a><br>`);
+    res_label.insertAdjacentHTML("beforeend", `After rolling the cats you entered, your last seed is: <a href="https://bc.godfat.org/?seed=${end_str}" target="_blank">${end_str}</a><br>`);
 
     seek_btn.disabled = false;
     status_txt.textContent = "Awaiting...";
